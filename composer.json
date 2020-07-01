@@ -1,0 +1,43 @@
+{
+    "name": "mpiyush007/laravel-entity-maker",
+    "description": "Adds ability to create an entity with service class.",
+    "keywords": [
+        "laravel-entity-maker"
+    ],
+    "homepage": "https://github.com/mpiyush007/laravel-entity-maker",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Piyush Maurya",
+            "email": "piyushmaurya07@gmail.com",
+            "homepage": "https://piyushmaurya.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Piyush\\EntityMaker\\": "src"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Piyush\\EntityMaker\\EntityMakerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
